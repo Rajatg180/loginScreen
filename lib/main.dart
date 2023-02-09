@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
 	                          child: TextField(
 	                            decoration: InputDecoration(
 	                              border: InputBorder.none,
-	                              hintText: "Email or Phone number",
+	                              hintText: "Username",
 	                              hintStyle: TextStyle(color: Colors.grey[400])
 	                            ),
 	                          ),
