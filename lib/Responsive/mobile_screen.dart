@@ -14,6 +14,7 @@ class _MobileScreenState extends State<MobileScreen> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
       	child: Container(
+          height: MediaQuery.of(context).size.height*1,
           decoration: BoxDecoration(
              gradient: LinearGradient(
                 colors: [
@@ -25,6 +26,7 @@ class _MobileScreenState extends State<MobileScreen> {
 	        child: Column(
 	          children: [
               Container(
+                 padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.10,right: MediaQuery.of(context).size.width*0.10,top: MediaQuery.of(context).size.width*0.2),
                  height: MediaQuery.of(context).size.height*0.45,
                  child: Center(
                    child: Lottie.asset("assets/38435-register.json"),

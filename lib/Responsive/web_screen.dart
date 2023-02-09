@@ -17,6 +17,7 @@ class _WebScreenState extends State<WebScreen> {
       	child: Padding(
           padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.35),
           child: Container(
+          height: MediaQuery.of(context).size.height*1,
           decoration: BoxDecoration(
              gradient: LinearGradient(
                 colors: [
@@ -29,6 +30,7 @@ class _WebScreenState extends State<WebScreen> {
              mainAxisAlignment: MainAxisAlignment.center,
             children: [
                Container(
+                 padding: EdgeInsets.only(left: MediaQuery.of(context).size.width*0.05,right: MediaQuery.of(context).size.width*0.05),
                  height: MediaQuery.of(context).size.height*0.45,
                  child: Center(
                    child: Lottie.asset("assets/38435-register.json"),
